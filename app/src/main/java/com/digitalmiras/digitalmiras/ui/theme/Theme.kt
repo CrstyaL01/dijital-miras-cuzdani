@@ -20,7 +20,6 @@ object NightBlueColors {
 
     // Accent Renkler
     val ElectricBlue = Color(0xFF3B82F6)       // Elektrik mavisi
-    val IndigoBlue = Color(0xFF6366F1)         // İndigo mavi
     val Teal = Color(0xFF14B8A6)               // Mavi yeşil
 
     // Nötr Renkler
@@ -30,9 +29,7 @@ object NightBlueColors {
     val DarkGray = Color(0xFF64748B)
 
     // Uyarı ve Hata Renkleri
-    val Warning = Color(0xFFF59E0B)            // Turuncu
     val Error = Color(0xFFEF4444)              // Kırmızı
-    val Success = Color(0xFF10B981)            // Yeşil
 }
 
 // Açık Tema (Gündüz Modu)
@@ -52,7 +49,7 @@ private val LightNightBlueColorScheme = lightColorScheme(
     tertiaryContainer = NightBlueColors.LightGray,
     onTertiaryContainer = NightBlueColors.DarkSlate,
 
-    background = NightBlueColors.MidnightBlue,
+    background = NightBlueColors.LightGray,
     onBackground = NightBlueColors.MidnightBlue,
     surface = NightBlueColors.PureWhite,
     onSurface = NightBlueColors.MidnightBlue,

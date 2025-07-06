@@ -52,7 +52,7 @@ private val LightNightBlueColorScheme = lightColorScheme(
     tertiaryContainer = NightBlueColors.LightGray,
     onTertiaryContainer = NightBlueColors.DarkSlate,
 
-    background = NightBlueColors.LightGray,
+    background = NightBlueColors.MidnightBlue,
     onBackground = NightBlueColors.MidnightBlue,
     surface = NightBlueColors.PureWhite,
     onSurface = NightBlueColors.MidnightBlue,

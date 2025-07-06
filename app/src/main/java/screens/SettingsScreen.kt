@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.screens
+package screens
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
@@ -16,8 +16,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.digitalmiras.digitalmiras.data.SettingItem
-import com.digitalmiras.digitalmiras.dialogs.*
+import data.SettingItem
+import dialogs.BackupSettingsDialog
+import dialogs.ContactDialog
+import dialogs.FeedbackDialog
+import dialogs.HelpDialog
+import dialogs.LanguageSettingsDialog
+import dialogs.NotificationSettingsDialog
+import dialogs.SecuritySettingsDialog
+import dialogs.ThemeSettingsDialog
+import dialogs.UserProfileDialog
 
 @Composable
 fun SettingsScreen(onLogout: () -> Unit) {

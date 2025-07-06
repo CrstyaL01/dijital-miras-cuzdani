@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.screens
+package screens
 
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.background

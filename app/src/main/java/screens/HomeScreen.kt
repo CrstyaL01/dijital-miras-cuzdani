@@ -1,15 +1,16 @@
-package com.digitalmiras.digitalmiras.screens
+package screens
 
 import androidx.compose.animation.core.*
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyRow
-import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
+import androidx.compose.material.icons.automirrored.filled.Send
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
@@ -23,8 +24,9 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.delay
-import com.digitalmiras.digitalmiras.state.AppState
-import com.digitalmiras.digitalmiras.data.QuickAction
+import state.AppState
+import data.QuickAction
+import data.TransactionData
 
 @Composable
 fun HomeScreen(appState: AppState) {
@@ -235,7 +237,7 @@ fun HomeScreen(appState: AppState) {
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Icon(
-                        Icons.Default.ArrowForward,
+                        Icons.AutoMirrored.Filled.ArrowForward,
                         contentDescription = null,
                         modifier = Modifier.size(16.dp),
                         tint = Color(0xFF1E3A8A)
@@ -252,7 +254,7 @@ fun HomeScreen(appState: AppState) {
             ) {
                 itemsIndexed(
                     listOf(
-                        QuickAction("Gönder", Icons.Default.Send, Color(0xFF3B82F6)) {
+                        QuickAction("Gönder", Icons.AutoMirrored.Filled.Send, Color(0xFF3B82F6)) {
                             appState.showNotification = true
                             appState.notificationMessage = "Gönder özelliği geliştiriliyor!"
                         },
@@ -302,7 +304,7 @@ fun HomeScreen(appState: AppState) {
                     )
                     Spacer(modifier = Modifier.width(4.dp))
                     Icon(
-                        Icons.Default.ArrowForward,
+                        Icons.AutoMirrored.Filled.ArrowForward,
                         contentDescription = null,
                         modifier = Modifier.size(16.dp),
                         tint = Color(0xFF1E3A8A)
@@ -329,7 +331,7 @@ fun AnimatedBalanceText(
     balance: Double,
     showBalance: Boolean
 ) {
-    var animatedBalance by remember { mutableStateOf(0.0) }
+    var animatedBalance by remember { mutableDoubleStateOf(0.0) }
 
     val animatedValue by animateFloatAsState(
         targetValue = if (showBalance) balance.toFloat() else 0f,
@@ -429,7 +431,7 @@ fun AnimatedQuickActionCard(
 
 @Composable
 fun AnimatedTransactionItem(
-    transaction: com.digitalmiras.digitalmiras.data.TransactionData,
+    transaction: TransactionData,
     delay: Long = 0L,
     onClick: () -> Unit
 ) {

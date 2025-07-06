@@ -6,7 +6,10 @@ import androidx.activity.compose.setContent
 import androidx.compose.runtime.*
 import com.digitalmiras.digitalmiras.screens.*
 import com.digitalmiras.digitalmiras.ui.theme.DigitalMirasTheme
-import com.digitalmiras.digitalmiras.navigation.Screen
+import navigation.Screen
+import screens.LoginScreen
+import screens.RegisterScreen
+import screens.SplashScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

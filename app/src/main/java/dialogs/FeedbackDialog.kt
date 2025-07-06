@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.dialogs
+package dialogs
 
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -16,7 +16,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun FeedbackDialog(onDismiss: () -> Unit) {
     var feedback by remember { mutableStateOf("") }
-    var rating by remember { mutableStateOf(5) }
+    var rating by remember { mutableIntStateOf(5) }
 
     AlertDialog(
         onDismissRequest = onDismiss,

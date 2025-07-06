@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.navigation
+package navigation
 
 sealed class Screen {
     object Splash : Screen()

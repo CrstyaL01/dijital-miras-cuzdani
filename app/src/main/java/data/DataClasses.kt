@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.data
+package data
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 

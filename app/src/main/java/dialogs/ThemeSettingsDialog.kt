@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.dialogs
+package dialogs
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border

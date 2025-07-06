@@ -1,9 +1,6 @@
 package com.digitalmiras.digitalmiras.screens
 
-import androidx.compose.animation.*
-import androidx.compose.animation.core.tween
 import androidx.compose.foundation.layout.*
-import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.*
 import androidx.compose.material3.*
@@ -15,9 +12,14 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import kotlinx.coroutines.delay
-import com.digitalmiras.digitalmiras.state.rememberAppState
-import com.digitalmiras.digitalmiras.components.*
-import com.digitalmiras.digitalmiras.dialogs.*
+import state.rememberAppState
+import components.NotificationSnackbar
+import dialogs.NotificationsDialog
+import dialogs.UserProfileDialog
+import screens.HeirsScreen
+import screens.HomeScreen
+import screens.SettingsScreen
+import screens.WalletsScreen
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

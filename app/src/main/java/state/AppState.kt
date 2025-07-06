@@ -1,8 +1,10 @@
-package com.digitalmiras.digitalmiras.state
+package state
 
 import androidx.compose.runtime.*
 import androidx.compose.ui.graphics.Color
-import com.digitalmiras.digitalmiras.data.*
+import data.HeirData
+import data.TransactionData
+import data.WalletData
 
 @Composable
 fun rememberAppState(): AppState {

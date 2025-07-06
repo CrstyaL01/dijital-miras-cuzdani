@@ -1,4 +1,4 @@
-package com.digitalmiras.digitalmiras.screens
+package screens
 
 import androidx.compose.foundation.*
 import androidx.compose.foundation.layout.*
@@ -16,10 +16,10 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.digitalmiras.digitalmiras.state.AppState
-import com.digitalmiras.digitalmiras.data.HeirData
-import com.digitalmiras.digitalmiras.dialogs.AddHeirDialog
-import com.digitalmiras.digitalmiras.dialogs.HeirDetailDialog
+import state.AppState
+import data.HeirData
+import dialogs.AddHeirDialog
+import dialogs.HeirDetailDialog
 
 @Composable
 fun HeirsScreen(appState: AppState) {

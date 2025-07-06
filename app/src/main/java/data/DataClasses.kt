@@ -50,5 +50,3 @@ data class NotificationItem(
     val time: String,
     val icon: ImageVector
 )
-
-//deneme yazısı

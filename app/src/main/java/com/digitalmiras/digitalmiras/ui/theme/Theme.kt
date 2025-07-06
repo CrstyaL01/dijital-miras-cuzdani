@@ -123,39 +123,3 @@ fun DigitalMirasTheme(
         content = content
     )
 }
-
-// Ek renk yardımcıları
-object ThemeColors {
-    @Composable
-    fun primaryGradient() = listOf(
-        MaterialTheme.colorScheme.primary,
-        NightBlueColors.ElectricBlue,
-        NightBlueColors.SkyBlue
-    )
-
-    @Composable
-    fun backgroundGradient() = if (isSystemInDarkTheme()) {
-        listOf(
-            NightBlueColors.DeepNavy,
-            NightBlueColors.MidnightBlue
-        )
-    } else {
-        listOf(
-            NightBlueColors.LightGray,
-            NightBlueColors.PureWhite
-        )
-    }
-
-    @Composable
-    fun cardGradient() = if (isSystemInDarkTheme()) {
-        listOf(
-            NightBlueColors.MidnightBlue,
-            NightBlueColors.DarkSlate
-        )
-    } else {
-        listOf(
-            NightBlueColors.PureWhite,
-            NightBlueColors.LightGray
-        )
-    }
-}

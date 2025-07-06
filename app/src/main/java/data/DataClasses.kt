@@ -1,7 +1,4 @@
 package com.digitalmiras.digitalmiras.data
-
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.*
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
 
@@ -53,3 +50,5 @@ data class NotificationItem(
     val time: String,
     val icon: ImageVector
 )
+
+//deneme yazısı
